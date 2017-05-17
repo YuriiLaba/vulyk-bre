@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: vulyk-bre
+Version: 0.0.1
+Summary: Vulyk bre plugin
+Home-page: UNKNOWN
+Author: Oles, Yuriy
+Author-email: UNKNOWN
+License: MIT
+Description: # vulyk-names
+        Plugin for Vulyk to find similarities between names
+        
+Keywords: vulyk_bre
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<script id="bre_template" type="text/x-handlebars-template">
+    {% raw %}
+    <h4 class="task-head1">{{ CleanText }}</h4>
+    <h4 class="task-head"> Вкажіть, чи з тексу випливає, що <strong>{{ Subject }}</strong> <strong>{{ Predicate }}</strong> <strong>{{ Object }}</strong></h4> 
+    <div class="btn-group-vertical selection" role="group">
+		<button type="button" class="btn btn-primary btn-lg" data-value="IS_MISTYPE_OF"><span class="pull-left">Правда</span> <span class="pull-right">[1]</span></button>
+        <button type="button" class="btn btn-danger btn-lg" data-value="NONE"><span class="pull-left">Зрада</span> <span class="pull-right">[2]</span></button>
+	</div>
+    {% endraw %}
+</script>
+
+<div id="out">
+    <input type="hidden" name="result" value="" />
+</div>
+
