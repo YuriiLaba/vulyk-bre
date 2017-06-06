@@ -7,7 +7,13 @@ $(function() {
         $(".selection button").eq(0).click();
     }).bind('keydown', '2', function() {
         $(".selection button").eq(1).click();
-    });
+    }).bind('keydown', '3', function() {
+        $(".selection button").eq(3).click();
+    }).bind('keydown', '4', function() {
+        $(".selection button").eq(4).click();
+    })
+    
+    ;
 
     $(document.body).on("vulyk.next", function(e, data) {
         output.html(template(data.result.task.data));
