@@ -8,9 +8,9 @@ $(function() {
     }).bind('keydown', '2', function() {
         $(".selection button").eq(1).click();
     }).bind('keydown', '3', function() {
-        $(".selection button").eq(3).click();
+        $(".selection button").eq(2).click();
     }).bind('keydown', '4', function() {
-        $(".selection button").eq(4).click();
+        $(".selection button").eq(3).click();
     })
     
     ;
