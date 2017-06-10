@@ -4,14 +4,15 @@
     {% raw %}
     <h4 class="task-head1 centered" id="text"><strong>{{ Text }}</strong></h4>
     <p class="centered">Оригінальна стаття: <a href="{{ WikipediaLink }}">{{ WikipediaTitle }}</a></p>
-    <h4 class="task-head centered"> Вкажіть, чи текст містить твердження <strong>
-        {{ Predicate }}  <span class="subject">{{ Subject }}</span>: <span class="object">{{ Object }}</span></strong></h4>
+    <h4 class="task-head centered"> Вкажіть, чи текст містить твердження:
+        <span class="subject">{{ Subject }}</span> - {{ Predicate }} - <span class="object">{{ Object }}</span>
+    </h4>
 
     <div class="btn-group-vertical selection" role="group">
-	<button type="button" class="btn btn-primary btn-lg" data-value="Follow"><span class="pull-left">Містить</span> <span class="pull-right">[1]</span></button>
-	<button type="button" class="btn btn-danger btn-lg" data-value="Can't guess"><span class="pull-left">Не явно</span> <span class="pull-right">[2]</span></button>
-        <button type="button" class="btn btn-danger btn-lg" data-value="Not follow"><span class="pull-left">Не містить</span> <span class="pull-right">[3]</span></button>
-        <button type="button" class="btn btn-info btn-lg" data-value="Not sentence"><span class="pull-left">Не є реченням</span> <span class="pull-right">[4]</span></button>
+	<button type="button" class="btn btn-primary btn-lg" data-value="Has"><span class="pull-left">Містить</span> <span class="pull-right">[1]</span></button>
+	<button type="button" class="btn btn-danger btn-lg" data-value="Weak"><span class="pull-left">Не явно</span> <span class="pull-right">[2]</span></button>
+        <button type="button" class="btn btn-danger btn-lg" data-value="Do not has"><span class="pull-left">Не містить</span> <span class="pull-right">[3]</span></button>
+        <button type="button" class="btn btn-info btn-lg" data-value="Not a sentence"><span class="pull-left">Не є реченням</span> <span class="pull-right">[4]</span></button>
 	</div>
     {% endraw %}
 </script>
