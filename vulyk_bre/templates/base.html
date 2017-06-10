@@ -2,9 +2,10 @@
 
 <script id="bre_template" type="text/x-handlebars-template">
     {% raw %}
-    <h4 class="task-head1 centered"><strong>{{ Text }}</strong></h4>
+    <h4 class="task-head1 centered" id="text"><strong>{{ Text }}</strong></h4>
     <p class="centered">Оригінальна стаття: <a href="{{ WikipediaLink }}">{{ WikipediaTitle }}</a></p>
-    <h4 class="task-head centered"> Вкажіть, чи текст містить твердження <strong>{{ Subject }}</strong> <strong>{{ Predicate }}</strong> <strong>{{ Object }}</strong></h4>
+    <h4 class="task-head centered"> Вкажіть, чи текст містить твердження <strong>
+        {{ Predicate }}  <span class="subject">{{ Subject }}</span>: <span class="object">{{ Object }}</span></strong></h4>
 
     <div class="btn-group-vertical selection" role="group">
 	<button type="button" class="btn btn-primary btn-lg" data-value="Follow"><span class="pull-left">Містить</span> <span class="pull-right">[1]</span></button>

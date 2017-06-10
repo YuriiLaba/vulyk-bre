@@ -17,6 +17,19 @@ $(function() {
 
     $(document.body).on("vulyk.next", function(e, data) {
         output.html(template(data.result.task.data));
+
+        $("#text").html(
+            $("#text").html().replace(new RegExp(data.result.task.data.SubjectAnchor, 'gi'),
+            '<span class="subject">$&</span>')
+        );
+
+        console.log(data.result.task.data.SubjectAnchor);
+
+        $("#text").html($("#text").html().replace(
+            new RegExp(data.result.task.data.ObjectAnchor, 'gi'),
+            '<span class="object">$&</span>'
+        ));
+
         res.val("");
     }).on("vulyk.save", function(e, callback) {
         callback(res.serializeJSON());
